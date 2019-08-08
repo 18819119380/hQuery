@@ -134,3 +134,6 @@ console.log( $('div') === $('span'))
 ```
 对 第三步 进行改造，加了这句话hQuery.fn.init.prototype = hQuery.fn， 这样 new hQuery.fn.init()得到对象，当调用.addClass时从hQuery.fn.init.prototype里找，也就是hQuery.fn里找，正好能找到。
 
+### 实现了 addClass get post 等功能
+https://github.com/pppcode/hQuery/blob/master/index.js
+
